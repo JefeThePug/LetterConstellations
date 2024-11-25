@@ -257,12 +257,9 @@ function settingsWindow() {
    fill(255, 255, 175, 90);
    rect(posX - 3, posY - 3, windowW + 6, windowH + 6);
    var iconsize = 75;
-   textSize(11);
    textAlign(CENTER);
    imageMode(CENTER);
    image(musicnote, windowW, windowH - 35, iconsize, iconsize);
-   fill(255, 255, 120);
-   text("Development & Illustration: Rob Mihalko\n", windowW, windowH + 90);
    textSize(40);
    textStyle(BOLD);
    fill(0, 88, 163, 100);
