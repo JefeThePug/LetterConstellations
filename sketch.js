@@ -126,7 +126,6 @@ function gamePlay(position) {
             guessMusic.fade(1, 2);
          }
       }
-      return;
    } else {
       fill(85, 0, 190);
    }
@@ -414,14 +413,6 @@ function drawStar(position) {
 }
 
 function mousePressed() {
-   console.log("mousePressed", {
-      guessing: guessing,
-      instrucScreen: instrucScreen,
-      homeScreen: homeScreen,
-      doneGame: doneGame,
-      mouseX: mouseX,
-      mouseY: mouseY
-   });
    if (guessing) {
       var letterGuess;
       for (var i = 0; i < letters.length; i++) {
