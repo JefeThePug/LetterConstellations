@@ -126,6 +126,7 @@ function gamePlay(position) {
             guessMusic.fade(1, 2);
          }
       }
+      return;
    } else {
       fill(85, 0, 190);
    }
