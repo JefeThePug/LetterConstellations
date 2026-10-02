@@ -151,7 +151,6 @@ function gamePlay(position) {
       ydis = abs(mouseY - h2);
       var insquare = xdis <= 30 && ydis <= 20;
       if (insquare || intriangle) {
-         console.log("HOME CLICK", mouseX, mouseY);
          resetGame();
          BGM.fade(0, 1);
          guessMusic.fade(0, 1);
@@ -415,6 +414,14 @@ function drawStar(position) {
 }
 
 function mousePressed() {
+   console.log("mousePressed", {
+      guessing: guessing,
+      instrucScreen: instrucScreen,
+      homeScreen: homeScreen,
+      doneGame: doneGame,
+      mouseX: mouseX,
+      mouseY: mouseY
+   });
    if (guessing) {
       var letterGuess;
       for (var i = 0; i < letters.length; i++) {
